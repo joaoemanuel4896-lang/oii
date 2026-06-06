@@ -1,24 +1,166 @@
 ```html
-<section class="hero">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Synara ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(-45deg,#090909,#1b0010,#32001d,#4a0029);
+background-size:400% 400%;
+animation:fundoAnimado 15s ease infinite;
+color:white;
+overflow-x:hidden;
+text-align:center;
+}
+
+@keyframes fundoAnimado{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.foto-principal{
+width:300px;
+height:300px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #ff4d88;
+box-shadow:
+0 0 20px #ff4d88,
+0 0 50px #ff4d88,
+0 0 80px rgba(255,77,136,.5);
+}
+
+.titulo{
+font-size:4rem;
+margin-top:20px;
+color:#ff4d88;
+text-shadow:
+0 0 10px #ff4d88,
+0 0 20px #ff4d88,
+0 0 40px #ff4d88;
+}
+
+.subtitulo{
+font-size:1.3rem;
+margin-top:15px;
+line-height:1.8;
+}
+
+.card{
+max-width:900px;
+margin:50px auto;
+padding:35px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+border-radius:25px;
+}
+
+.card h2{
+color:#ff4d88;
+margin-bottom:20px;
+}
+
+.card p{
+line-height:2;
+font-size:18px;
+}
+
+.contador{
+display:inline-block;
+margin-top:20px;
+padding:20px 35px;
+border-radius:20px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+font-size:2rem;
+color:#ff4d88;
+}
+
+footer{
+padding:40px;
+color:#ccc;
+}
+
+.coracao{
+position:fixed;
+top:-20px;
+font-size:20px;
+animation:cair linear forwards;
+pointer-events:none;
+}
+
+@keyframes cair{
+to{
+transform:translateY(110vh);
+}
+}
+
+.estrela{
+position:fixed;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:piscar 3s infinite;
+pointer-events:none;
+}
+
+@keyframes piscar{
+0%,100%{opacity:.2;}
+50%{opacity:1;}
+}
+
+iframe{
+border-radius:20px;
+box-shadow:0 0 20px rgba(255,77,136,.4);
+margin-top:20px;
+max-width:100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
 
 <div class="hero-content">
 
 <img src="Foto1.jpg" class="foto-principal">
 
-<h1>Synara ❤️</h1>
+<h1 class="titulo">Synara ❤️</h1>
 
 <p class="subtitulo">
-Nem sempre precisamos de anos para perceber que alguém é especial.
-Às vezes basta uma conversa, um sorriso ou um momento para tudo começar a fazer sentido.
+Nem sempre precisamos de muito tempo para perceber quando alguém é especial.
+Você chegou e transformou meus dias de um jeito que eu nunca imaginei.
+❤️
 </p>
 
-<a href="#carta" class="botao">
-Ler Minha Carta 💌
-</a>
-
-<br><br>
-
-<h2 style="margin-bottom:15px;">🎵 Nossa Música</h2>
+<h2 style="margin-top:30px;">🎵 Nossa Música</h2>
 
 <iframe
 width="350"
@@ -26,15 +168,12 @@ height="200"
 src="https://www.youtube.com/embed/fOBGrF-bQbA"
 title="Os Anjos Cantam"
 frameborder="0"
-allowfullscreen
-style="border-radius:20px;">
+allowfullscreen>
 </iframe>
 
 </div>
 
-</section>
-
-<section id="carta">
+</div>
 
 <div class="card">
 
@@ -43,62 +182,99 @@ style="border-radius:20px;">
 <p>
 Synara,
 
-Talvez eu não seja o melhor com palavras, mas queria que você soubesse o quanto você se tornou importante para mim.
+Talvez eu não consiga explicar tudo em palavras,
+mas queria que você soubesse que você se tornou uma pessoa muito importante para mim.
 
-Mesmo em pouco tempo, você conseguiu ocupar um espaço enorme no meu coração.
+Seu sorriso, seu jeito e cada momento que compartilhamos fazem meus dias melhores.
 
-Seu sorriso é lindo, seu jeito é encantador e cada conversa nossa consegue deixar meu dia melhor.
+Nossa história está apenas começando,
+mas eu já sei que quero guardar cada capítulo dela com carinho.
 
-Eu gosto de imaginar todas as memórias que ainda vamos criar juntos.
-
-E enquanto elas não chegam, fiz esse pequeno cantinho para mostrar o quanto você é especial para mim.
-
+Obrigado por existir.
 ❤️
 </p>
 
 </div>
 
-</section>
+<div class="card">
 
-<section>
-
-<h2>🌹 Você</h2>
-
-<div class="galeria">
-
-<img src="Foto1.jpg">
-
-</div>
-
-<div class="card" style="margin-top:25px;">
-
-<p>
-Ainda estamos escrevendo os primeiros capítulos da nossa história.
-
-Por isso não coloquei várias fotos ou várias lembranças.
-
-Mas coloquei aquilo que mais importa:
-você.
-
-Porque foi você quem inspirou tudo isso.
-❤️
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>⏳ Desde Que Tudo Começou</h2>
+<h2>⏳ Nosso Tempo</h2>
 
 <div id="contador" class="contador"></div>
 
-</section>
+</div>
 
 <footer>
-
 ❤️ Feito especialmente para Synara ❤️
-
 </footer>
+
+<script>
+
+const inicio = new Date("2025-06-01");
+
+function atualizar(){
+
+const agora = new Date();
+
+const diferenca = agora - inicio;
+
+const dias = Math.floor(
+diferenca/(1000*60*60*24)
+);
+
+document.getElementById("contador").innerHTML =
+dias + " dias ❤️";
+
+}
+
+atualizar();
+setInterval(atualizar,1000);
+
+function criarCoracao(){
+
+const c=document.createElement("div");
+
+c.classList.add("coracao");
+
+c.innerHTML="❤️";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.animationDuration=
+(Math.random()*4+4)+"s";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+c.remove();
+},8000);
+
+}
+
+setInterval(criarCoracao,300);
+
+for(let i=0;i<150;i++){
+
+const estrela=
+document.createElement("div");
+
+estrela.classList.add("estrela");
+
+estrela.style.left=
+Math.random()*100+"vw";
+
+estrela.style.top=
+Math.random()*100+"vh";
+
+estrela.style.animationDelay=
+Math.random()*3+"s";
+
+document.body.appendChild(estrela);
+
+}
+
+</script>
+
+</body>
+</html>
 ```
